@@ -1,29 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>This is My webpage</title>
-		<script src="https://www.gstatic.com/firebasejs/9.0.1/firebase-app.js"></script>
-		<script src="https://www.gstatic.com/firebasejs/9.7.0/firebase-database.js"></script>
-
-		<script type="module">
-		  // Import the functions you need from the SDKs you need
-		  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js";
-		  // TODO: Add SDKs for Firebase products that you want to use
-		  // https://firebase.google.com/docs/web/setup#available-libraries
-
-		  // Your web app's Firebase configuration
-		  const firebaseConfig = {
-			apiKey: "AIzaSyDaYwC6_rAxHji5zMaCj8yZD6Jv4mGiax8",
-			authDomain: "test-database-eb109.firebaseapp.com",
-			projectId: "test-database-eb109",
-			storageBucket: "test-database-eb109.appspot.com",
-			messagingSenderId: "760720966611",
-			appId: "1:760720966611:web:f44f44c140c6b79f4aa526"
-		  };
-
-		  // Initialize Firebase
-		  const app = initializeApp(firebaseConfig);
-		</script>
+		<title>This is My webpage</title
 	</head>
 
 	<body>
@@ -31,15 +9,5 @@
 		<p>And some new stuff</p>
 		<a href = "https://github.com/" target="_blank">Github</a><br>
 		<img src = "../Images/4runner.jpg" width="250" height="250" alt="Please wait">
-		<script>
-			// Get a reference to the database
-			var database = firebase.database();
-
-			// Write data to the database
-			database.ref("users").set({
-			  name: "John Doe",
-			  email: "johndoe@example.com"
-			});
-		</script>
 	</body>
 </html>
