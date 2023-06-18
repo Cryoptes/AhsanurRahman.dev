@@ -3,6 +3,8 @@
 	<head>
 		<title>This is My webpage</title>
 		<script src="https://www.gstatic.com/firebasejs/9.0.1/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/9.7.0/firebase-database.js"></script>
+
 		<script type="module">
 		  // Import the functions you need from the SDKs you need
 		  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js";
@@ -23,10 +25,21 @@
 		  const app = initializeApp(firebaseConfig);
 		</script>
 	</head>
+
 	<body>
 		<h1>This is My webpage</h1>
 		<p>And some new stuff</p>
 		<a href = "https://github.com/" target="_blank">Github</a><br>
 		<img src = "../Images/4runner.jpg" width="250" height="250" alt="Please wait">
+		<script>
+			// Get a reference to the database
+			var database = firebase.database();
+
+			// Write data to the database
+			database.ref("users").set({
+			  name: "John Doe",
+			  email: "johndoe@example.com"
+			});
+		</script>
 	</body>
 </html>
