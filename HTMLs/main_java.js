@@ -1,4 +1,4 @@
 function test_func(){
-	console.log(5 + 6);
+	document.getElementById("demo").innerHTML = 5 + 6;
 	return 0;
 }
